@@ -196,3 +196,11 @@ tr:not(:first-child):not(:nth-child(2)):hover td {
 		white-space: nowrap;
 	}
 }
+
+.botao_excluir {
+	background: #dc2626;
+}
+
+.botao_excluir:hover {
+	background: #b91c1c;
+}

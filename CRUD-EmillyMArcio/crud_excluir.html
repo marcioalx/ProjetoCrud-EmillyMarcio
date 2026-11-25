@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Excluir Registro</title>
+		<link rel="stylesheet" type="text/css" href="formata.css"/>
+	</head>
+	<body>
+		<h1>Excluir Registro</h1>
+		<hr/>
+		<form name="form1" method="post" action="excluir.php" onsubmit="return confirm('Tem certeza que deseja excluir este registro?');">
+			<label for="txtcodigo">Código do registro: </label>
+			<input type="number" name="txtcodigo" id="txtcodigo" min="1" required />
+			<br/><br/>
+			<input type="submit" value="Excluir" class="botao_excluir" />
+			<input type="reset" value="Limpar" onClick="document.getElementById('txtcodigo').focus()" />
+			<input type="button" value="Menu" onClick="location.href='index.html'" />
+		</form>
+		<p><small>Dica: consulte o código do registro na opção Listar.</small></p>
+	</body>
+</html>
